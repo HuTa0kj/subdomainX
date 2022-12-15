@@ -64,7 +64,7 @@ def zm(domain):
 
     headers = {'Authorization': 'JWT ' + access_token}
 
-    for page in range(20):
+    for page in range(200):
         res = zm_subdomain(domain, page + 1, headers)
 
         if len(res['list']) == 0:
